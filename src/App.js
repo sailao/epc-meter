@@ -6,7 +6,7 @@ import BusinessPlan from './BusinessPlan';
 import LastHomePlan from './LastHomePlan';
 import React,{useState, useEffect, useRef} from 'react';
 import LastBusinessPlan from './LastBusinessPlan';
-import { HashRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import "./i18n";
 
