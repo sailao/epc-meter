@@ -6,7 +6,7 @@ import BusinessPlan from './BusinessPlan';
 import LastHomePlan from './LastHomePlan';
 import React,{useState, useEffect, useRef} from 'react';
 import LastBusinessPlan from './LastBusinessPlan';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
 import "./i18n";
 
@@ -92,6 +92,16 @@ const App = () => {
 
     return (
         <Router>
+            <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/unit-meter/">Epc Meter</Link>
+            </li>
+          </ul>
+        </nav>
             <Route exact path="/" component={Home} />
             <Route path="/unit-meter" component={meter_mesure} />
         </Router>
